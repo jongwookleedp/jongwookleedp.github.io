@@ -1,63 +1,168 @@
-CINEMATOGRAPHER · MUSIC VIDEO
-이종욱
-JONGWOOK LEE
-Director of Photography
-MUSIC VIDEO
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이종욱 — Music Video Portfolio</title>
+<style>
+  :root{ --bg:#0c0c0d; --panel:#141416; --line:#262629; --ink:#f4f4f5; --muted:#9a9aa0; --gold:#c9a86a; }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{ background:var(--bg); color:var(--ink);
+    font-family:"Apple SD Gothic Neo","Pretendard","Helvetica Neue","Malgun Gothic",sans-serif;
+    -webkit-font-smoothing:antialiased; line-height:1.6; }
+  .wrap{max-width:1080px; margin:0 auto; padding:0 28px;}
 
-IU (아이유) — LILAC
-DP: Jongwook Lee · Dir. 서동혁 · 2021
+  header{padding:60px 0 34px; border-bottom:1px solid var(--line);}
+  .eyebrow{font-size:12px; letter-spacing:.35em; text-transform:uppercase; color:var(--muted); margin-bottom:16px;}
+  h1{font-size:40px; font-weight:800; letter-spacing:-.02em; line-height:1.05;}
+  h1 .en{font-size:15px; font-weight:500; color:var(--muted); letter-spacing:.18em; text-transform:uppercase; display:block; margin-top:10px;}
+  h1 .role{display:block; font-size:16px; font-weight:500; color:var(--muted); margin-top:14px;}
 
-김동률 — 산책
-DP: Jongwook Lee · 김무열 · 이영아 출연
+  h2{font-size:13px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--ink); margin:46px 0 20px; display:flex; align-items:center; gap:14px;}
+  h2::after{content:""; flex:1; height:1px; background:var(--line);}
 
-Sunset Rollercoaster — Slow / Oriental
-DP: Jongwook Lee · 골든 멜로디 어워드 최우수 뮤직비디오상
+  .frame{position:relative; width:100%; aspect-ratio:16/9; background:#000;}
+  .frame iframe{position:absolute; inset:0; width:100%; height:100%; border:0;}
+  .card-v{background:var(--panel); border:1px solid var(--line); border-radius:10px; overflow:hidden;}
+  .card-v .frame{border-radius:0;}
+  .meta{padding:13px 16px 15px;}
+  .meta .t{font-size:14.5px; font-weight:650;}
+  .meta .d{font-size:12px; color:var(--muted); margin-top:3px;}
+  .meta .d .aw{color:var(--gold);}
 
-로이킴 — 그때로 돌아가
-DP: Jongwook Lee · 2023
+  /* featured — large, full width single */
+  .featured{margin-bottom:18px;}
+  .featured .meta{padding:15px 4px 0;}
+  .featured .meta .t{font-size:17px;}
 
-권진아 — LOVE & HATE
-DP: Jongwook Lee · 2025
+  /* big row */
+  .duo{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:18px;}
+  .duo .meta .t{font-size:16px;}
+  .duo .meta .d .aw{color:var(--gold);}
 
-김필 — Dry Flower
-DP: Jongwook Lee · 2025
+  /* rest grid */
+  .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+  .grid .meta .t{font-size:13.5px;}
+  .grid .meta .d{font-size:11px;}
 
-김동률 — 답장 (Reply)
-DP: Jongwook Lee
+  footer{margin-top:48px; padding:36px 0 64px; border-top:1px solid var(--line); color:var(--muted); font-size:14px;}
+  footer a{color:var(--ink); text-decoration:none; border-bottom:1px solid #444;}
+  footer .row{display:flex; flex-wrap:wrap; gap:24px; margin-top:10px;}
 
-DK (김동혁) — LTNS 오랜만이야
-DP: Jongwook Lee
+  @media(max-width:820px){ .grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:640px){ h1{font-size:30px;} .duo,.grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div class="wrap">
 
-머쉬베놈 — 돌림판
-DP: Jongwook Lee
+  <header>
+    <div class="eyebrow">Cinematographer · Music Video</div>
+    <h1>이종욱
+      <span class="en">Jongwook Lee</span>
+      <span class="role">Director of Photography</span>
+    </h1>
+  </header>
 
-제이통 — Woof
-DP: Jongwook Lee
+  <!-- MUSIC VIDEO -->
+  <h2>Music Video</h2>
 
-Moodsampler — 민호
-DP: Jongwook Lee
+  <!-- BIG ROW 1: IU · 김동률 산책 -->
+  <div class="duo">
+    <div>
+      <div class="frame"><iframe src="https://player.vimeo.com/video/555263250" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="IU LILAC"></iframe></div>
+      <div class="meta"><div class="t">IU (아이유) — LILAC</div><div class="d">DP: Jongwook Lee · Dir. 서동혁 · 2021</div></div>
+    </div>
+    <div>
+      <div class="frame"><iframe src="https://player.vimeo.com/video/1197577423" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="Kim Dong Ryul Sanchaek"></iframe></div>
+      <div class="meta"><div class="t">김동률 — 산책</div><div class="d">DP: Jongwook Lee · 김무열 · 이영아 출연</div></div>
+    </div>
+  </div>
 
-백안 (ANN) — Our Time
-DP: Jongwook Lee · 대만
-ALSO — COMMERCIAL
+  <!-- BIG ROW 2: Sunset · 로이킴 -->
+  <div class="duo">
+    <div>
+      <div class="frame"><iframe src="https://player.vimeo.com/video/300323343" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="Sunset Rollercoaster"></iframe></div>
+      <div class="meta"><div class="t">Sunset Rollercoaster — Slow / Oriental</div><div class="d">DP: Jongwook Lee · <span class="aw">골든 멜로디 어워드 최우수 뮤직비디오상</span></div></div>
+    </div>
+    <div>
+      <div class="frame"><iframe src="https://player.vimeo.com/video/798363853" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="Roy Kim"></iframe></div>
+      <div class="meta"><div class="t">로이킴 — 그때로 돌아가</div><div class="d">DP: Jongwook Lee · 2023</div></div>
+    </div>
+  </div>
 
-아디다스 — Assemble
-Commercial · 2026
+  <!-- REST GRID -->
+  <div class="grid">
+    <div class="card-v">
+      <div class="frame"><iframe src="https://player.vimeo.com/video/1081276575" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="Kwon Jin Ah"></iframe></div>
+      <div class="meta"><div class="t">권진아 — LOVE &amp; HATE</div><div class="d">DP: Jongwook Lee · 2025</div></div>
+    </div>
+    <div class="card-v">
+      <div class="frame"><iframe src="https://player.vimeo.com/video/1149080682" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="Kim Feel"></iframe></div>
+      <div class="meta"><div class="t">김필 — Dry Flower</div><div class="d">DP: Jongwook Lee · 2025</div></div>
+    </div>
+    <div class="card-v">
+      <div class="frame"><iframe src="https://player.vimeo.com/video/272621242" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="Kim Dong Ryul Reply"></iframe></div>
+      <div class="meta"><div class="t">김동률 — 답장 (Reply)</div><div class="d">DP: Jongwook Lee</div></div>
+    </div>
+    <div class="card-v">
+      <div class="frame"><iframe src="https://player.vimeo.com/video/1031022742" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="DK LTNS"></iframe></div>
+      <div class="meta"><div class="t">DK (김동혁) — LTNS 오랜만이야</div><div class="d">DP: Jongwook Lee</div></div>
+    </div>
+    <div class="card-v">
+      <div class="frame"><iframe src="https://player.vimeo.com/video/1111962758" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="Mush Vinom"></iframe></div>
+      <div class="meta"><div class="t">머쉬베놈 — 돌림판</div><div class="d">DP: Jongwook Lee</div></div>
+    </div>
+    <div class="card-v">
+      <div class="frame"><iframe src="https://player.vimeo.com/video/1121051692" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="Jtong Woof"></iframe></div>
+      <div class="meta"><div class="t">제이통 — Woof</div><div class="d">DP: Jongwook Lee</div></div>
+    </div>
+    <div class="card-v">
+      <div class="frame"><iframe src="https://player.vimeo.com/video/809691371" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="Moodsampler Minho"></iframe></div>
+      <div class="meta"><div class="t">Moodsampler — 민호</div><div class="d">DP: Jongwook Lee</div></div>
+    </div>
+    <div class="card-v">
+      <div class="frame"><iframe src="https://player.vimeo.com/video/312999705" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="ANN Our Time"></iframe></div>
+      <div class="meta"><div class="t">백안 (ANN) — Our Time</div><div class="d">DP: Jongwook Lee · 대만</div></div>
+    </div>
+  </div>
 
-아디다스 — Fun Beyond Rules
-Commercial · 2025
+  <!-- 참고: 광고 -->
+  <h2>Also — Commercial</h2>
+  <div class="grid">
+    <div class="card-v">
+      <div class="frame"><iframe src="https://player.vimeo.com/video/1199652462" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="adidas Assemble"></iframe></div>
+      <div class="meta"><div class="t">아디다스 — Assemble</div><div class="d">Commercial · 2026</div></div>
+    </div>
+    <div class="card-v">
+      <div class="frame"><iframe src="https://player.vimeo.com/video/1127153494" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="adidas Fun Beyond Rules"></iframe></div>
+      <div class="meta"><div class="t">아디다스 — Fun Beyond Rules</div><div class="d">Commercial · 2025</div></div>
+    </div>
+    <div class="card-v">
+      <div class="frame"><iframe src="https://player.vimeo.com/video/365050720" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="Naver TVC"></iframe></div>
+      <div class="meta"><div class="t">네이버 웹소설 — 중증외상센터 골든아워</div><div class="d">Commercial · <span class="aw">서울크리에이티브페스티벌 그랑프리</span></div></div>
+    </div>
+    <div class="card-v">
+      <div class="frame"><iframe src="https://player.vimeo.com/video/1081226824" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="SSG"></iframe></div>
+      <div class="meta"><div class="t">SSG — Beauty of SSG</div><div class="d">Commercial · 2025</div></div>
+    </div>
+    <div class="card-v">
+      <div class="frame"><iframe src="https://player.vimeo.com/video/1081022506" allow="fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="KTO Adventure"></iframe></div>
+      <div class="meta"><div class="t">한국관광공사 — 모험 ADVENTURE</div><div class="d">Commercial · 2024</div></div>
+    </div>
+  </div>
+  <p style="font-size:12.5px; color:var(--muted); margin-top:14px;">Film — 미망교실(부천영화제 수상) · 매미(칸 시네파운데이션 Second Prize) 외 다수 · <a href="https://vimeo.com/jongwooklee" style="color:var(--muted); border-bottom:1px solid #444;">vimeo.com/jongwooklee</a></p>
 
-네이버 웹소설 — 중증외상센터 골든아워
-Commercial · 서울크리에이티브페스티벌 그랑프리
+  <footer>
+    <div>이종욱 · Jongwook Lee — Director of Photography &nbsp;|&nbsp; 한국예술종합학교</div>
+    <div class="row">
+      <span>Email: <a href="mailto:jongwooklee.dp@gmail.com">jongwooklee.dp@gmail.com</a></span>
+      <span>Vimeo: <a href="https://vimeo.com/jongwooklee">vimeo.com/jongwooklee</a></span>
+      <span>Instagram: <a href="https://instagram.com/jongwooklee">@jongwooklee</a></span>
+      <span>Mobile: 010-5295-5689</span>
+    </div>
+  </footer>
 
-SSG — Beauty of SSG
-Commercial · 2025
-
-한국관광공사 — 모험 ADVENTURE
-Commercial · 2024
-Film — 미망교실(부천영화제 수상) · 매미(칸 시네파운데이션 Second Prize) 외 다수 · vimeo.com/jongwooklee
-이종욱 · Jongwook Lee — Director of Photography  |  한국예술종합학교
-Email: jongwooklee.dp@gmail.com
-Vimeo: vimeo.com/jongwooklee
-Instagram: @jongwooklee
-Mobile: 010-5295-5689
+</div>
+</body>
+</html>
