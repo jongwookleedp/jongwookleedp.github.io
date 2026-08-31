@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jongwook Lee — Beauty Reel</title>
+<style>
+  :root{ --bg:#0b0b0c; --panel:#141416; --line:#242427; --ink:#f4f4f5; --muted:#9a9aa0; --faint:#6f6f76; }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{ background:var(--bg); color:var(--ink);
+    font-family:"Helvetica Neue","Apple SD Gothic Neo","Pretendard","Malgun Gothic",sans-serif;
+    -webkit-font-smoothing:antialiased; line-height:1.6; }
+  .wrap{max-width:1220px; margin:0 auto; padding:0 26px;}
+  header{padding:70px 0 38px;}
+  .eyebrow{font-size:12px; letter-spacing:.34em; text-transform:uppercase; color:var(--muted); margin-bottom:20px;}
+  h1{font-size:50px; font-weight:800; letter-spacing:-.02em; line-height:1.03;}
+  h1 .role{display:block; font-size:16px; font-weight:500; color:var(--muted); letter-spacing:.02em; margin-top:15px;}
+  .intro{max-width:680px; color:#c9c9cf; font-size:15.5px; margin-top:22px;}
+  .intro strong{color:var(--ink); font-weight:600;}
+
+  .awards{margin-top:30px; padding-top:24px; border-top:1px solid var(--line);}
+  .awards .lbl{font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--faint); margin-bottom:14px;}
+  .aw-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:0 44px;}
+  .aw-item{display:flex; gap:14px; align-items:baseline; padding:10px 0; border-bottom:1px solid var(--line);}
+  .aw-item .cat{flex:0 0 82px; font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--faint); padding-top:2px;}
+  .aw-item .p{font-size:13.5px; font-weight:650;}
+  .aw-item .p em{font-style:normal; color:var(--muted); font-weight:500;}
+  .aw-item .s{font-size:12px; color:var(--muted); margin-top:2px;}
+
+  .gallery{display:grid; grid-auto-flow:dense; grid-template-columns:repeat(2,1fr); gap:14px; padding:26px 0 10px;}
+  figure{position:relative; margin:0; background:var(--panel); border:1px solid var(--line); border-radius:10px; overflow:hidden;}
+  figure.wide{grid-column:1 / -1;}
+  figure img{width:100%; display:block; aspect-ratio:16/9; object-fit:cover; transition:transform .5s ease;}
+  figure:hover img{transform:scale(1.02);}
+  figcaption{position:absolute; left:0; right:0; bottom:0; padding:26px 16px 12px;
+    background:linear-gradient(to top, rgba(0,0,0,.72), rgba(0,0,0,0));
+    display:flex; align-items:baseline; gap:10px; opacity:0; transition:opacity .28s ease;}
+  figure:hover figcaption{opacity:1;}
+  figcaption .proj{font-size:13.5px; font-weight:650; letter-spacing:.01em;}
+  figcaption .tal{font-size:12px; color:#cfcfd4;}
+  footer{margin-top:44px; padding:40px 0 74px; border-top:1px solid var(--line); color:var(--muted); font-size:14px;}
+  footer a{color:var(--ink); text-decoration:none; border-bottom:1px solid #444;}
+  footer .row{display:flex; flex-wrap:wrap; gap:26px; margin-top:10px;}
+  @media(max-width:720px){
+    h1{font-size:35px;} header{padding:48px 0 26px;}
+    .aw-grid{grid-template-columns:1fr; gap:0;}
+    .gallery{grid-template-columns:1fr;} figure.wide{grid-column:auto;}
+    figcaption{opacity:1; background:linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0));}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Selected Works — Beauty · Fashion · Commercial</div>
+    <h1>Jongwook Lee
+      <span class="role">Director of Photography — Cinematographer &amp; Colorist</span>
+    </h1>
+    <p class="intro">
+      A Seoul-based cinematographer working across commercial, film, and music video.
+      I can also take a project <strong>through to the color grade (DI)</strong> myself —
+      keeping a single, controlled look from set to final image, built on narrative framing
+      and precise control of light and color.
+    </p>
+    <div class="awards">
+      <div class="lbl">Awards &amp; Recognition</div>
+      <div class="aw-grid">
+        <div class="aw-item"><div class="cat">Film</div><div><div class="p">Cannes Film Festival — La Cinef <em>Second Prize</em></div><div class="s"><em>Cicada</em> (short) · 2021</div></div></div>
+        <div class="aw-item"><div class="cat">Film</div><div><div class="p">Bucheon Int'l Fantastic Film Festival — <em>3 Awards</em></div><div class="s">29th · 2025</div></div></div>
+        <div class="aw-item"><div class="cat">Music Video</div><div><div class="p">Golden Melody Awards — <em>Best Music Video</em></div><div class="s">Sunset Rollercoaster, <em>Slow / Oriental</em> · Taiwan</div></div></div>
+        <div class="aw-item"><div class="cat">Commercial</div><div><div class="p">CICLOPE Asia — <em>Gold</em></div><div class="s">2023</div></div></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="gallery">
+<figure class="wide">
+      <img src="media/bibi_3.jpg" alt="BIBI — bad sad and mad Music Video" loading="lazy">
+      <figcaption><span class="proj">BIBI — bad sad and mad</span><span class="tal">Music Video</span></figcaption>
+    </figure>
+<figure>
+      <img src="media/beautyofssg_2.jpg" alt="Beauty of SSG Cha Eun-woo" loading="lazy">
+      <figcaption><span class="proj">Beauty of SSG</span><span class="tal">Cha Eun-woo</span></figcaption>
+    </figure>
+<figure>
+      <img src="media/adidas_3.jpg" alt="adidas Jung Ho-yeon" loading="lazy">
+      <figcaption><span class="proj">adidas</span><span class="tal">Jung Ho-yeon</span></figcaption>
+    </figure>
+<figure>
+      <img src="media/bibi_1.jpg" alt="BIBI Music Video" loading="lazy">
+      <figcaption><span class="proj">BIBI</span><span class="tal">Music Video</span></figcaption>
+    </figure>
+<figure class="wide">
+      <img src="media/adidas_1.jpg" alt="adidas Jung Ho-yeon" loading="lazy">
+      <figcaption><span class="proj">adidas</span><span class="tal">Jung Ho-yeon</span></figcaption>
+    </figure>
+<figure>
+      <img src="media/adidas_2.jpg" alt="adidas Jung Ho-yeon" loading="lazy">
+      <figcaption><span class="proj">adidas</span><span class="tal">Jung Ho-yeon</span></figcaption>
+    </figure>
+<figure class="wide">
+      <img src="media/skt_wonyoung.jpg" alt="SKT Jang Wonyoung" loading="lazy">
+      <figcaption><span class="proj">SKT</span><span class="tal">Jang Wonyoung</span></figcaption>
+    </figure>
+<figure>
+      <img src="media/ssg_sohee.jpg" alt="SSG Han So-hee" loading="lazy">
+      <figcaption><span class="proj">SSG</span><span class="tal">Han So-hee</span></figcaption>
+    </figure>
+<figure>
+      <img src="media/adidas_4.jpg" alt="adidas Jung Ho-yeon" loading="lazy">
+      <figcaption><span class="proj">adidas</span><span class="tal">Jung Ho-yeon</span></figcaption>
+    </figure>
+<figure class="wide">
+      <img src="media/beautyofssg_1.jpg" alt="Beauty of SSG Cha Eun-woo" loading="lazy">
+      <figcaption><span class="proj">Beauty of SSG</span><span class="tal">Cha Eun-woo</span></figcaption>
+    </figure>
+<figure>
+      <img src="media/beautyofssg_3.jpg" alt="Beauty of SSG Cha Eun-woo" loading="lazy">
+      <figcaption><span class="proj">Beauty of SSG</span><span class="tal">Cha Eun-woo</span></figcaption>
+    </figure>
+<figure>
+      <img src="media/thewhoo.jpg" alt="The Whoo Cheongidan" loading="lazy">
+      <figcaption><span class="proj">The Whoo</span><span class="tal">Cheongidan</span></figcaption>
+    </figure>
+<figure>
+      <img src="media/iope_1.jpg" alt="IOPE " loading="lazy">
+      <figcaption><span class="proj">IOPE</span></figcaption>
+    </figure>
+<figure>
+      <img src="media/iope_2.jpg" alt="IOPE " loading="lazy">
+      <figcaption><span class="proj">IOPE</span></figcaption>
+    </figure>
+<figure>
+      <img src="media/abib.jpg" alt="Abib " loading="lazy">
+      <figcaption><span class="proj">Abib</span></figcaption>
+    </figure>
+<figure>
+      <img src="media/lador_kazuha.jpg" alt="La'dor Kazuha" loading="lazy">
+      <figcaption><span class="proj">La'dor</span><span class="tal">Kazuha</span></figcaption>
+    </figure>
+<figure>
+      <img src="media/dinsee.jpg" alt="Dinsee " loading="lazy">
+      <figcaption><span class="proj">Dinsee</span></figcaption>
+    </figure>
+<figure>
+      <img src="media/kissme_somi_2.jpg" alt="Kiss Me Jeon Somi" loading="lazy">
+      <figcaption><span class="proj">Kiss Me</span><span class="tal">Jeon Somi</span></figcaption>
+    </figure>
+<figure class="wide">
+      <img src="media/kimsoohyun.jpg" alt="Kim Soo-hyun Commercial" loading="lazy">
+      <figcaption><span class="proj">Kim Soo-hyun</span><span class="tal">Commercial</span></figcaption>
+    </figure>  </div>
+
+  <footer>
+    <div>Jongwook Lee · Director of Photography</div>
+    <div class="row">
+      <span>Email: <a href="mailto:jongwooklee.dp@gmail.com">jongwooklee.dp@gmail.com</a></span>
+      <span>Showreel: <a href="https://vimeo.com/jongwooklee">vimeo.com/jongwooklee</a></span>
+      <span>Instagram: <a href="https://instagram.com/jongwooklee">@jongwooklee</a></span>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
