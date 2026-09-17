@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jongwook Lee — Space Reel</title>
+<style>
+ :root{ --bg:#0c0c0d; --panel:#151517; --line:#242427; --ink:#f4f4f5; --muted:#9a9aa0; --faint:#6f6f76; }
+ *{box-sizing:border-box;margin:0;padding:0;}
+ body{background:var(--bg);color:var(--ink);font-family:"Helvetica Neue","Apple SD Gothic Neo","Pretendard",sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6;}
+ .wrap{max-width:1180px;margin:0 auto;padding:0 26px;}
+ header{padding:74px 0 20px;}
+ .eyebrow{font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;}
+ h1{font-size:48px;font-weight:800;letter-spacing:-.02em;line-height:1.05;}
+ h1 .role{display:block;font-size:16px;font-weight:500;color:var(--muted);margin-top:14px;letter-spacing:.02em;}
+ .intro{max-width:640px;color:#c9c9cf;font-size:15.5px;margin-top:20px;}
+ .awards{margin-top:28px;padding-top:22px;border-top:1px solid var(--line);}
+ .awards .lbl{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--faint);margin-bottom:12px;}
+ .aw-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 44px;}
+ .aw-item{display:flex;gap:14px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line);}
+ .aw-item .cat{flex:0 0 82px;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);padding-top:2px;}
+ .aw-item .p{font-size:13.5px;font-weight:650;}
+ .aw-item .p em{font-style:normal;color:var(--muted);font-weight:500;}
+ .aw-item .s{font-size:12px;color:var(--muted);margin-top:2px;}
+ section{padding:14px 0;}
+ .sec-head{margin:30px 0 16px;padding-top:22px;border-top:1px solid var(--line);}
+ .sec-head h2{font-size:16px;font-weight:750;letter-spacing:.02em;}
+ .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+ .card{text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:border-color .2s,transform .2s;}
+ .card:hover{border-color:#454550;transform:translateY(-2px);}
+ .thumb{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden;}
+ .thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;opacity:.94;}
+ .card:hover .thumb img{transform:scale(1.04);opacity:1;}
+ .play{position:absolute;inset:0;margin:auto;width:46px;height:46px;border-radius:50%;background:rgba(0,0,0,.5);border:1.5px solid rgba(255,255,255,.85);backdrop-filter:blur(2px);}
+ .play::after{content:"";position:absolute;top:50%;left:53%;transform:translate(-50%,-50%);border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent #fff;}
+ .cap{padding:12px 14px 14px;}
+ .cap .t{display:block;font-size:14px;font-weight:650;}
+ .cap .n{display:block;font-size:12px;color:var(--muted);margin-top:3px;}
+ footer{margin-top:40px;padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;}
+ footer a{color:var(--ink);text-decoration:none;border-bottom:1px solid #444;}
+ footer .row{display:flex;flex-wrap:wrap;gap:24px;margin-top:10px;}
+ @media(max-width:860px){ .grid{grid-template-columns:repeat(2,1fr);} .aw-grid{grid-template-columns:1fr;} }
+ @media(max-width:560px){ h1{font-size:34px;} .grid{grid-template-columns:1fr;} header{padding:48px 0 16px;} }
+</style></head>
+<body><div class="wrap">
+ <header>
+   <div class="eyebrow">Space · Architecture · Interiors</div>
+   <h1>Jongwook Lee<span class="role">Director of Photography</span></h1>
+   <p class="intro">A cinematographer with a feel for space, light and atmosphere — selected work across hospitality, architecture and interiors. Click any frame to watch.</p>
+    <div class="awards">
+      <div class="lbl">Awards &amp; Recognition</div>
+      <div class="aw-grid">
+        <div class="aw-item"><div class="cat">Film</div><div><div class="p">Cannes Film Festival — La Cinef <em>Second Prize</em></div><div class="s"><em>Cicada</em> (short) · 2021</div></div></div>
+        <div class="aw-item"><div class="cat">Film</div><div><div class="p">Bucheon Int'l Fantastic Film Festival — <em>3 Awards</em></div><div class="s">29th · 2025</div></div></div>
+        <div class="aw-item"><div class="cat">Music Video</div><div><div class="p">Golden Melody Awards — <em>Best Music Video</em></div><div class="s">Sunset Rollercoaster · Taiwan</div></div></div>
+        <div class="aw-item"><div class="cat">Commercial</div><div><div class="p">CICLOPE Asia — <em>Gold</em></div><div class="s">2023</div></div></div>
+      </div>
+    </div>
+ </header>
+  <section><div class="sec-head"><h2>Hospitality & Interiors</h2></div><div class="grid"><a class="card" href="https://www.youtube.com/watch?v=s6cjTbZFOA4" target="_blank" rel="noopener">
+      <div class="thumb"><img src="thumb/yt_s6cjTbZFOA4.jpg" loading="lazy"><span class="play"></span></div>
+      <div class="cap"><span class="t">Lettre de Cognac</span><span class="n">Shot on location · Hotel · F&B</span></div>
+    </a><a class="card" href="https://vimeo.com/795817939" target="_blank" rel="noopener">
+      <div class="thumb"><img src="thumb/795817939.jpg" loading="lazy"><span class="play"></span></div>
+      <div class="cap"><span class="t">Hanatour</span><span class="n">Travel · Destinations</span></div>
+    </a><a class="card" href="https://vimeo.com/798405612" target="_blank" rel="noopener">
+      <div class="thumb"><img src="thumb/798405612.jpg" loading="lazy"><span class="play"></span></div>
+      <div class="cap"><span class="t">Casamia — Bedroom</span><span class="n">Shinsegae Casamia · Bedroom</span></div>
+    </a><a class="card" href="https://vimeo.com/798405653" target="_blank" rel="noopener">
+      <div class="thumb"><img src="thumb/798405653.jpg" loading="lazy"><span class="play"></span></div>
+      <div class="cap"><span class="t">Casamia — Living Room</span><span class="n">Shinsegae Casamia · Living</span></div>
+    </a><a class="card" href="https://vimeo.com/342653751" target="_blank" rel="noopener">
+      <div class="thumb"><img src="thumb/342653751.jpg" loading="lazy"><span class="play"></span></div>
+      <div class="cap"><span class="t">DACOR</span><span class="n">Luxury kitchen · Interior</span></div>
+    </a></div></section>  <section><div class="sec-head"><h2>Architecture & Space</h2></div><div class="grid"><a class="card" href="https://vimeo.com/788595686" target="_blank" rel="noopener">
+      <div class="thumb"><img src="thumb/788595686.jpg" loading="lazy"><span class="play"></span></div>
+      <div class="cap"><span class="t">ASTY</span><span class="n">Architecture · Space</span></div>
+    </a><a class="card" href="https://vimeo.com/476982736" target="_blank" rel="noopener">
+      <div class="thumb"><img src="thumb/476982736.jpg" loading="lazy"><span class="play"></span></div>
+      <div class="cap"><span class="t">DEUTSCH</span><span class="n">Automotive · Spatial</span></div>
+    </a><a class="card" href="https://vimeo.com/1127153494" target="_blank" rel="noopener">
+      <div class="thumb"><img src="thumb/1127153494.jpg" loading="lazy"><span class="play"></span></div>
+      <div class="cap"><span class="t">adidas — Fun Beyond Rules</span><span class="n">Architectural spaces · Campaign</span></div>
+    </a></div></section>  <section><div class="sec-head"><h2>Lifestyle & Mood</h2></div><div class="grid"><a class="card" href="https://vimeo.com/345602713" target="_blank" rel="noopener">
+      <div class="thumb"><img src="thumb/345602713.jpg" loading="lazy"><span class="play"></span></div>
+      <div class="cap"><span class="t">The Sero × Hypebeast</span><span class="n">Samsung · Lifestyle film</span></div>
+    </a><a class="card" href="https://vimeo.com/952660144" target="_blank" rel="noopener">
+      <div class="thumb"><img src="thumb/952660144.jpg" loading="lazy"><span class="play"></span></div>
+      <div class="cap"><span class="t">Volvo — Family</span><span class="n">Lifestyle</span></div>
+    </a><a class="card" href="https://vimeo.com/375925972" target="_blank" rel="noopener">
+      <div class="thumb"><img src="thumb/375925972.jpg" loading="lazy"><span class="play"></span></div>
+      <div class="cap"><span class="t">Swatchon</span><span class="n">Textile · Texture</span></div>
+    </a><a class="card" href="https://vimeo.com/795818657" target="_blank" rel="noopener">
+      <div class="thumb"><img src="thumb/795818657.jpg" loading="lazy"><span class="play"></span></div>
+      <div class="cap"><span class="t">SKT FLIP</span><span class="n">Tech · Lifestyle</span></div>
+    </a><a class="card" href="https://vimeo.com/1081226824" target="_blank" rel="noopener">
+      <div class="thumb"><img src="thumb/1081226824.jpg" loading="lazy"><span class="play"></span></div>
+      <div class="cap"><span class="t">Beauty of SSG</span><span class="n">Cosmetics · SSG</span></div>
+    </a><a class="card" href="https://vimeo.com/795818262" target="_blank" rel="noopener">
+      <div class="thumb"><img src="thumb/795818262.jpg" loading="lazy"><span class="play"></span></div>
+      <div class="cap"><span class="t">Mothan — Spring</span><span class="n">Fashion · Mood</span></div>
+    </a></div></section>
+ <footer>
+   <div>Jongwook Lee · Director of Photography</div>
+   <div class="row">
+     <span>Email: <a href="mailto:jongwooklee.dp@gmail.com">jongwooklee.dp@gmail.com</a></span>
+     <span>Vimeo: <a href="https://vimeo.com/jongwooklee">vimeo.com/jongwooklee</a></span>
+     <span>Instagram: <a href="https://instagram.com/jongwooklee">@jongwooklee</a></span>
+   </div>
+ </footer>
+</div></body></html>
